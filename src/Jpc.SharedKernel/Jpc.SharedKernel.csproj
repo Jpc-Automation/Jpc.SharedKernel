@@ -8,12 +8,12 @@
       <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
       <Description>Jpc shared kernel project/package</Description>
       <Summary>An shared kernel project/package</Summary>
-      <PackageProjectUrl>https://github.com/Jpc-Automation/Jpc.Shared.Kernel</PackageProjectUrl>
-      <RepositoryUrl>https://github.com/Jpc-Automation/Jpc.Shared.Kernel</RepositoryUrl>
+      <PackageProjectUrl>https://github.com/Jpc-Automation/Jpc.SharedKernel</PackageProjectUrl>
+      <RepositoryUrl>https://github.com/Jpc-Automation/Jpc.SharedKernel</RepositoryUrl>
       <PackageTags>DDD;Shared Kernel;SharedKernel;Domain-Driven Design;Repository;Specification;ValueObject;Value Object;Jpc;Clean;Clean Architecture;Clean Architecture Template</PackageTags>
       <PackageIcon>icon.png</PackageIcon>
       
-      <Version>1.0.1</Version>
+      <Version>1.1.0</Version>
       <PackageReleaseNotes>
          
       </PackageReleaseNotes>
