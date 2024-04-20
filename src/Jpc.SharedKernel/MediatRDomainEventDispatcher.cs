@@ -23,19 +23,5 @@ public class MediatRDomainEventDispatcher : IDomainEventDispatcher
             }
         }
     }
-
-    public async Task DispatchAndClearEvents<TId>(IEnumerable<EntityBase<TId>> entitiesWithEvents)
-        where TId : struct, IEquatable<TId>
-    {
-        foreach (var entity in entitiesWithEvents)
-        {
-            var events = entity.DomainEvents.ToArray();
-            entity.ClearDomainEvents();
-            foreach (var domainEvent in events)
-            {
-                await _mediator.Publish(domainEvent).ConfigureAwait(false);
-            }
-        }
-    }
 }
 

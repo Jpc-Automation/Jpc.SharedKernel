@@ -5,7 +5,7 @@ public abstract class AggregateRoot<TId> : EntityBase<TId> where TId : struct, I
     protected override void RegisterDomainEvent(DomainEventBase domainEvent)
     {
         if ((object)Id is not null)
-            domainEvent.SetAggregateId(Id.ToString() ?? "");
+            domainEvent.SetAggregateId(Id.ToString() ?? string.Empty);
 
         base.RegisterDomainEvent(domainEvent);
     }
