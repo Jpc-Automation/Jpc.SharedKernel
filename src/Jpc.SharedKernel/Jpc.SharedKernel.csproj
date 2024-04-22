@@ -13,9 +13,9 @@
         <PackageTags>DDD;Shared Kernel;SharedKernel;Domain-Driven Design;Repository;Specification;ValueObject;Value Object;Jpc;Clean;Clean Architecture;Clean Architecture Template</PackageTags>
         <PackageIcon>icon.png</PackageIcon>
 
-        <Version>1.1.0</Version>
+        <Version>1.2.0</Version>
         <PackageReleaseNotes>
-
+            Added extension method for mediatr to publish domain events
         </PackageReleaseNotes>
 
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
