@@ -10,8 +10,14 @@ public abstract class EntityBase : HasDomainEventsBase
     public Guid Id { get; set; }
 }
 
+//public abstract class EntityBase<TId> : HasDomainEventsBase
+//  where TId : struct, IEquatable<TId>
+//{
+//    public TId Id { get; set; }
+//}
+
 public abstract class EntityBase<TId> : HasDomainEventsBase
-  where TId : struct, IEquatable<TId>
+    where TId : IEquatable<TId>
 {
-    public TId Id { get; set; }
+    public required TId Id { get; set; }
 }

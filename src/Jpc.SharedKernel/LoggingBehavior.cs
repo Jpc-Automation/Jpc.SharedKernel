@@ -35,11 +35,11 @@ public class LoggingBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, 
 
     public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
     {
-        //Guard.Against.Null(request);
-
         ArgumentNullException.ThrowIfNull(request, nameof(request));
 
-        if (_logger.IsEnabled(LogLevel.Information))
+        var isCommand = request is ICommand<TResponse>;
+
+        if ((_logger.IsEnabled(LogLevel.Information) && isCommand) || _logger.IsEnabled(LogLevel.Debug))
         {
             _logger.LogInformation("Handling {RequestName}", typeof(TRequest).Name);
 
@@ -57,8 +57,10 @@ public class LoggingBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, 
 
         var response = await next();
 
-        _logger.LogInformation("Handled {RequestName} with {Response} in {ms} ms", typeof(TRequest).Name, response, sw.ElapsedMilliseconds);
         sw.Stop();
+
+        _logger.LogInformation("Handled {RequestName} with {Response} in {ms} ms", typeof(TRequest).Name, response, sw.ElapsedMilliseconds);
+
         return response;
     }
 }
