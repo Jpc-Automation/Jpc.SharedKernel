@@ -7,7 +7,7 @@
 /// </summary>
 public abstract class EntityBase : HasDomainEventsBase
 {
-    public Guid Id { get; set; }
+    public Guid Id { get; protected set; }
 }
 
 //public abstract class EntityBase<TId> : HasDomainEventsBase
@@ -19,5 +19,5 @@ public abstract class EntityBase : HasDomainEventsBase
 public abstract class EntityBase<TId> : HasDomainEventsBase
     where TId : IEquatable<TId>
 {
-    public required TId Id { get; set; }
+    public TId Id { get; protected set; } = default!;
 }

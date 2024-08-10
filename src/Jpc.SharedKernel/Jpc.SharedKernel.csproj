@@ -1,43 +1,47 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-    <PropertyGroup>
-        <AssemblyName>Jpc.SharedKernel</AssemblyName>
-        <PackageId>Jpc.SharedKernel</PackageId>
-        <Title>Jpc.SharedKernel</Title>
-        <Authors>Jeffrey</Authors>
-        <Company>JPC Automatisering</Company>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Description>Jpc shared kernel project/package</Description>
-        <Summary>An shared kernel project/package</Summary>
-        <PackageProjectUrl>https://github.com/Jpc-Automation/Jpc.SharedKernel</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/Jpc-Automation/Jpc.SharedKernel</RepositoryUrl>
-        <PackageTags>DDD;Shared Kernel;SharedKernel;Domain-Driven Design;Repository;Specification;ValueObject;Value Object;Jpc;Clean;Clean Architecture;Clean Architecture Template</PackageTags>
-        <PackageIcon>icon.png</PackageIcon>
+	<PropertyGroup>
+		<AssemblyName>Jpc.SharedKernel</AssemblyName>
+		<PackageId>Jpc.SharedKernel</PackageId>
+		<Title>Jpc.SharedKernel</Title>
+		<Authors>Jeffrey</Authors>
+		<Company>JPC Automatisering</Company>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Description>Jpc shared kernel project/package</Description>
+		<Summary>An shared kernel project/package</Summary>
+		<PackageProjectUrl>https://github.com/Jpc-Automation/Jpc.SharedKernel</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Jpc-Automation/Jpc.SharedKernel</RepositoryUrl>
+		<PackageTags>DDD;Shared Kernel;SharedKernel;Domain-Driven Design;Repository;Specification;ValueObject;Value Object;Jpc;Clean;Clean Architecture;Clean Architecture Template</PackageTags>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <!--<PackageLicenseExpression>MIT</PackageLicenseExpression>-->
+		<Version>1.6.3</Version>
+		<PackageReleaseNotes>
+			* allow null argument in bool equeals opperator in ValueObject
+		</PackageReleaseNotes>
 
-        <Version>1.3.0</Version>
-        <PackageReleaseNotes>
-            * All dependencies updated to latest versions.
-            * Changed EntityBase: Id type of "struct" not required.
-        </PackageReleaseNotes>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+		<DocumentationFile>bin\$(Configuration)\Jpc.SharedKernel.xml</DocumentationFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
 
-        <PublishRepositoryUrl>true</PublishRepositoryUrl>
-        <EmbedUntrackedSources>true</EmbedUntrackedSources>
-        <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-        <DocumentationFile>bin\$(Configuration)\Jpc.SharedKernel.xml</DocumentationFile>
-        <PackageReadmeFile>README.md</PackageReadmeFile>
-    </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="MediatR" />
+		<PackageReference Include="Ardalis.Specification" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+	</ItemGroup>
 
-    <ItemGroup>
-        <PackageReference Include="MediatR" />
-        <PackageReference Include="Ardalis.Specification" />
-        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
-    </ItemGroup>
+	<ItemGroup>
+		<None Include="icon.png" Pack="true" Visible="false" PackagePath="" />
+		<None Include="..\..\README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
 
-    <ItemGroup>
-        <None Include="icon.png" Pack="true" Visible="false" PackagePath="" />
-        <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
-    </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\LICENSE.txt" Pack="true" PackagePath="LICENSE.txt"/>
+  </ItemGroup>
 
-    <PropertyGroup>
-        <NoWarn>1701;1702;1591;1573;1712</NoWarn>
-    </PropertyGroup>
+	<PropertyGroup>
+		<NoWarn>1701;1702;1591;1573;1712</NoWarn>
+	</PropertyGroup>
 </Project>

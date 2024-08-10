@@ -92,7 +92,7 @@ public abstract class ValueObject : IComparable, IComparable<ValueObject>
         return CompareTo(other as object);
     }
 
-    public static bool operator ==(ValueObject a, ValueObject b)
+    public static bool operator ==(ValueObject? a, ValueObject? b)
     {
         if (a is null && b is null)
             return true;
