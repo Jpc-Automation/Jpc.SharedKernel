@@ -14,9 +14,9 @@
 		<PackageIcon>icon.png</PackageIcon>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <!--<PackageLicenseExpression>MIT</PackageLicenseExpression>-->
-		<Version>1.6.9</Version>
+		<Version>1.6.10</Version>
 		<PackageReleaseNotes>
-			* remove struct constrain from AggragteRoot
+			* Add archiving option to DomainEventBase, used by generic eventlogger
 		</PackageReleaseNotes>
 
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>

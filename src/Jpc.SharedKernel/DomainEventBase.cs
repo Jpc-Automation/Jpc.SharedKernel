@@ -10,6 +10,7 @@ public abstract class DomainEventBase : INotification
 {
     public string AggregateId { get; protected set; } = string.Empty;
     public DateTime DateOccurred { get; protected set; } = DateTime.UtcNow;
+    public bool Archive { get; protected set; } = true;
 
     internal void SetAggregateId(string aggregateId)
     {
