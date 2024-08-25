@@ -14,9 +14,9 @@
 		<PackageIcon>icon.png</PackageIcon>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <!--<PackageLicenseExpression>MIT</PackageLicenseExpression>-->
-		<Version>1.6.4</Version>
+		<Version>1.6.9</Version>
 		<PackageReleaseNotes>
-			* allow null argument in bool equeals opperator in ValueObject
+			* remove struct constrain from AggragteRoot
 		</PackageReleaseNotes>
 
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
