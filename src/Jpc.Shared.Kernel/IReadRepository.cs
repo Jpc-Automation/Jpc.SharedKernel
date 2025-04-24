@@ -1,6 +1,6 @@
 ﻿using Ardalis.Specification;
 
-namespace Jpc.SharedKernel;
+namespace Jpc.Shared.Kernel;
 
 /// <summary>
 /// An abstraction for read only persistence operations, based on Ardalis.Specification.

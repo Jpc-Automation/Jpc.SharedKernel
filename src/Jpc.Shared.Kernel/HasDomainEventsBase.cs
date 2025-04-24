@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Jpc.SharedKernel;
+namespace Jpc.Shared.Kernel;
 
 public abstract class HasDomainEventsBase
 {

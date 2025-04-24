@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Jpc.SharedKernel;
+namespace Jpc.Shared.Kernel;
 
 public class MediatRDomainEventDispatcher : IDomainEventDispatcher
 {

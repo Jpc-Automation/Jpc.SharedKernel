@@ -1,4 +1,4 @@
-﻿namespace Jpc.SharedKernel;
+﻿namespace Jpc.Shared.Kernel;
 
 public interface IDateTimeProvider
 {

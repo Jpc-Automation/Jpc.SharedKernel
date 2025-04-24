@@ -1,32 +1,32 @@
 ﻿using FluentAssertions;
 using Xunit;
 
-namespace Jpc.SharedKernel.UnitTests.EntityBaseTests;
+namespace Jpc.Shared.Kernel.UnitTests.EntityBaseTests;
 
 public class EntityBase_AddDomainEvent
 {
-  private class TestDomainEvent : DomainEventBase { }
+    private class TestDomainEvent : DomainEventBase { }
 
-  private class TestEntity : EntityBase
-  {
-    public void AddTestDomainEvent()
+    private class TestEntity : EntityBase
     {
-      var domainEvent = new TestDomainEvent();
-      RegisterDomainEvent(domainEvent);
+        public void AddTestDomainEvent()
+        {
+            var domainEvent = new TestDomainEvent();
+            RegisterDomainEvent(domainEvent);
+        }
     }
-  }
 
-  [Fact]
-  public void AddsDomainEventToEntity()
-  {
-    // Arrange
-    var entity = new TestEntity();
+    [Fact]
+    public void AddsDomainEventToEntity()
+    {
+        // Arrange
+        var entity = new TestEntity();
 
-    // Act
-    entity.AddTestDomainEvent();
+        // Act
+        entity.AddTestDomainEvent();
 
-    // Assert
-    entity.DomainEvents.Should().HaveCount(1);
-    entity.DomainEvents.Should().AllBeOfType<TestDomainEvent>();
-  }
+        // Assert
+        entity.DomainEvents.Should().HaveCount(1);
+        entity.DomainEvents.Should().AllBeOfType<TestDomainEvent>();
+    }
 }

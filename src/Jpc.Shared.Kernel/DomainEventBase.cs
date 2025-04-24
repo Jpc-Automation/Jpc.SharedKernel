@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Jpc.SharedKernel;
+namespace Jpc.Shared.Kernel;
 
 /// <summary>
 /// A base type for domain events. Depends on MediatR INotification.

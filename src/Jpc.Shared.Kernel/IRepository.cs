@@ -1,6 +1,6 @@
 ﻿using Ardalis.Specification;
 
-namespace Jpc.SharedKernel;
+namespace Jpc.Shared.Kernel;
 
 /// <summary>
 /// An abstraction for persistence, based on Ardalis.Specification

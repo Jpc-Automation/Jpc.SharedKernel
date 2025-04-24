@@ -1,4 +1,4 @@
-﻿namespace Jpc.SharedKernel;
+﻿namespace Jpc.Shared.Kernel;
 
 public abstract class AggregateRoot<TId> : EntityBase<TId> where TId : IEquatable<TId>
 {

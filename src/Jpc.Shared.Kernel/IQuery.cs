@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Jpc.SharedKernel;
+namespace Jpc.Shared.Kernel;
 
 /// <summary>
 /// Source: https://code-maze.com/cqrs-mediatr-fluentvalidation/

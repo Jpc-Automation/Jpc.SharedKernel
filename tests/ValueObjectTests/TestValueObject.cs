@@ -1,4 +1,4 @@
-﻿namespace Jpc.SharedKernel.UnitTests.ValueObjectTests;
+﻿namespace Jpc.Shared.Kernel.UnitTests.ValueObjectTests;
 
 public class TestValueObject : ValueObject
 {

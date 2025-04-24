@@ -3,7 +3,7 @@ using MediatR;
 using Moq;
 using Xunit;
 
-namespace Jpc.SharedKernel.UnitTests.MediatRDomainEventDispatcherTests;
+namespace Jpc.Shared.Kernel.UnitTests.MediatRDomainEventDispatcherTests;
 
 public class DispatchAndClearEvents
 {

@@ -1,9 +1,9 @@
-﻿using MediatR;
-using Microsoft.Extensions.Logging;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Reflection;
+using MediatR;
+using Microsoft.Extensions.Logging;
 
-namespace Jpc.SharedKernel;
+namespace Jpc.Shared.Kernel;
 
 /// <summary>
 /// Adds logging for all requests in MediatR pipeline.

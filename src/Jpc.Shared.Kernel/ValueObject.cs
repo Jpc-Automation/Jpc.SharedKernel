@@ -1,4 +1,4 @@
-﻿namespace Jpc.SharedKernel;
+﻿namespace Jpc.Shared.Kernel;
 
 /// <summary>
 /// NOTE: Use `readonly record struct` for most cases in C# 10+

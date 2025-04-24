@@ -1,6 +1,6 @@
 ﻿using Ardalis.Specification;
 
-namespace Jpc.SharedKernel;
+namespace Jpc.Shared.Kernel;
 
 public abstract class SpecificationBase<TResult> : Specification<TResult>
 {

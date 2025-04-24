@@ -1,4 +1,4 @@
-﻿namespace Jpc.SharedKernel;
+﻿namespace Jpc.Shared.Kernel;
 
 /// <summary>
 /// A base class for DDD Entities. Includes support for domain events dispatched post-persistence.

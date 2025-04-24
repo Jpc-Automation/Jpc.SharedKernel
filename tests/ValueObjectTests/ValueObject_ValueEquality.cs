@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
 using Xunit;
 
-namespace Jpc.SharedKernel.UnitTests.ValueObjectTests;
+namespace Jpc.Shared.Kernel.UnitTests.ValueObjectTests;
 
 public class ValueObject_ValueEquality
 {

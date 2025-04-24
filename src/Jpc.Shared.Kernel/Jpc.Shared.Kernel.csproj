@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<AssemblyName>Jpc.SharedKernel</AssemblyName>
-		<PackageId>Jpc.SharedKernel</PackageId>
-		<Title>Jpc.SharedKernel</Title>
+		<AssemblyName>Jpc.Shared.Kernel</AssemblyName>
+		<PackageId>Jpc.Shared.Kernel</PackageId>
+		<Title>Jpc.Shared.Kernel</Title>
 		<Authors>Jeffrey</Authors>
 		<Company>JPC Automatisering</Company>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -22,7 +22,7 @@
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
 		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-		<DocumentationFile>bin\$(Configuration)\Jpc.SharedKernel.xml</DocumentationFile>
+		<DocumentationFile>bin\$(Configuration)\Jpc.Shared.Kernel.xml</DocumentationFile>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
@@ -40,8 +40,5 @@
   <ItemGroup>
     <None Include="..\..\LICENSE.txt" Pack="true" PackagePath="LICENSE.txt"/>
   </ItemGroup>
-
-	<PropertyGroup>
-		<NoWarn>1701;1702;1591;1573;1712</NoWarn>
-	</PropertyGroup>
+  
 </Project>

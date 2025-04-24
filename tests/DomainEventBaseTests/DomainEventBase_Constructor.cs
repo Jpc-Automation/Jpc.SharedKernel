@@ -1,23 +1,23 @@
-﻿using Xunit;
-using FluentAssertions;
+﻿using FluentAssertions;
+using Xunit;
 
-namespace Jpc.SharedKernel.UnitTests.DomainEventBaseTests;
+namespace Jpc.Shared.Kernel.UnitTests.DomainEventBaseTests;
 
 public class DomainEventBase_Constructor
 {
-  private class TestDomainEvent : DomainEventBase { }
+    private class TestDomainEvent : DomainEventBase { }
 
-  [Fact]
-  public void SetsDateOccurredToCurrentDateTime()
-  {
-    // Arrange
-    var beforeCreation = DateTime.UtcNow;
+    [Fact]
+    public void SetsDateOccurredToCurrentDateTime()
+    {
+        // Arrange
+        var beforeCreation = DateTime.UtcNow;
 
-    // Act
-    var domainEvent = new TestDomainEvent();
+        // Act
+        var domainEvent = new TestDomainEvent();
 
-    // Assert
-    domainEvent.DateOccurred.Should().BeOnOrAfter(beforeCreation);
-    domainEvent.DateOccurred.Should().BeOnOrBefore(DateTime.UtcNow);
-  }
+        // Assert
+        domainEvent.DateOccurred.Should().BeOnOrAfter(beforeCreation);
+        domainEvent.DateOccurred.Should().BeOnOrBefore(DateTime.UtcNow);
+    }
 }

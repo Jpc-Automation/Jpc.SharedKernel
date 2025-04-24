@@ -1,4 +1,4 @@
-﻿namespace Jpc.SharedKernel;
+﻿namespace Jpc.Shared.Kernel;
 
 /// <summary>
 /// Exception type for domain exceptions
