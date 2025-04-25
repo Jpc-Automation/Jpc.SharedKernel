@@ -1,9 +1,36 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <!--<TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>-->
+    <AssemblyName>Jpc.Shared.Utilities</AssemblyName>
+    <PackageId>Jpc.Shared.Utilities</PackageId>
+    <Title>Jpc.Shared.Utilities</Title>
+    <Authors>Jeffrey</Authors>
+    <Company>JPC Automatisering</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Jpc shared utilities project/package</Description>
+    <Summary>An shared utilities project/package</Summary>
+    <PackageProjectUrl>https://github.com/Jpc-Automation/Jpc.SharedKernel</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Jpc-Automation/Jpc.SharedKernel</RepositoryUrl>
+    <PackageTags>utilities;Shared;Jpc;library;lib;</PackageTags>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <!--<PackageLicenseExpression>MIT</PackageLicenseExpression>-->
+    <Version>1.0.0</Version>
+    <PackageReleaseNotes>
+      * Add archiving option to DomainEventBase, used by generic eventlogger
+    </PackageReleaseNotes>
+
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <DocumentationFile>bin\$(Configuration)\Jpc.Shared.Utilities.xml</DocumentationFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" Visible="true" PackagePath="" />
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\..\LICENSE.txt" Pack="true" PackagePath="LICENSE.txt"/>
+  </ItemGroup>
 
 </Project>

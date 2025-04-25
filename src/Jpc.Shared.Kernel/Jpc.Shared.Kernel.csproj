@@ -14,7 +14,7 @@
 		<PackageIcon>icon.png</PackageIcon>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <!--<PackageLicenseExpression>MIT</PackageLicenseExpression>-->
-		<Version>1.6.10</Version>
+		<Version>1.8.1</Version>
 		<PackageReleaseNotes>
 			* Add archiving option to DomainEventBase, used by generic eventlogger
 		</PackageReleaseNotes>
@@ -33,12 +33,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Include="icon.png" Pack="true" Visible="false" PackagePath="" />
+		<None Include="icon.png" Pack="true" Visible="true" PackagePath="" />
 		<None Include="..\..\README.md" Pack="true" PackagePath="\" />
-	</ItemGroup>
-
-  <ItemGroup>
     <None Include="..\..\LICENSE.txt" Pack="true" PackagePath="LICENSE.txt"/>
-  </ItemGroup>
+	</ItemGroup>
   
 </Project>
