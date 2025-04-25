@@ -1,4 +1,4 @@
-﻿namespace Infrastructure;
+﻿namespace Jpc.Shared.Utilities;
 
 public static class Time
 {
